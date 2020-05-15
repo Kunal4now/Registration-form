@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application Form</title>
+    <style>
+        *{
+            font-family: "montserrat",sans-serif;
+        }
+        body{
+            background-image: url("modern.jpg");
+            background-repeat: no-repeat;
+        /*  background-image: linear-gradient(#3f5efb,#fc466b);*/
+            background-position: center;
+            background-size: cover;
+            /*text-align: center;*/
+            justify-content: center;
+        /*  height: 100%;*/
+            width: 100vw;
+            height: 100vh;
+            
+
+
+
+
+
+
+        
+        }
+        table,td,tr{
+            /*border: 1px solid;*/
+            border: none;
+            color: #2e2e2e;
+            border-collapse: collapse;
+            table-layout: fixed;
+            height: 50px;
+            width: 100%;
+            /*text-align: center;*/
+            /*font-family: "montserrat",sans-serif;*/
+            font-family: "Arial Black", Gadget, sans-serif;
+            font-size: 23px;
+            padding: 5px;
+            font-weight: bolder;
+
+            
+        }
+        #cont{
+            margin-left: 17%;
+            padding-top: 5%;
+        }
+        #box{
+            /*align-items: center;*/
+            border:none;
+            border-radius: 19px;
+            width: 80%;
+            height: 750px;
+            background-color: rgba(255, 255, 255, 0.314);
+            margin-top: 3%;
+            margin-left: 9%;
+            box-shadow: 0 0 33px rgba(100,100,100,10000);
+            
+        }
+        /*label{
+            margin-right: 40%;
+        }*/
+        #mail,#name,#pass,#statechoice,#city,#file,#suggst{
+            background-color: white;
+            border: none;
+            border-radius: 15px;
+            padding: 10px;
+        }
+        .buttn{
+            background-color: #fc466b;
+            border : none;
+            height: 35px;
+            width: 120px;
+            border-radius: 15px;
+            box-shadow: 0 0 5px rgba(100,100,100,10000);
+            cursor: pointer;
+            color: white;
+
+
+        }
+        #hei{
+            height: 100px;
+        }
+        #fl{
+            float: right;
+            margin-right: 40%;
+            margin-top: 1%;
+        }
+        #suggestions{
+            height: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <div align="center">
+        <h1>Registration Form</h1>
+    </div>
+    <div id="box">
+        <div id="cont">
+    <table border="1">
+        <form>
+            <tr>
+                <td>
+                    <label for="mail">Customer id</label>
+                </td>
+                <td>
+                    <input type="text" id="mail" name="Username" placeholder="Customer id" style="text-align: center;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name">Customer Name</label>
+                </td>
+                <td>
+                    <input type="text" id="name" name="name" placeholder="Customer Name"
+                    style="text-align: center;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pass">Password</label>
+                </td>
+                <td>
+                    <input type="Password" id="pass" name="pass" placeholder="Password" style="text-align:center;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gen">Gender</label>
+                </td>
+                <td>
+                    <label for="mal" style="font-size: 18px;">Male:</label>
+                    <input type="radio" id="mal" name="male">
+                    <label for="fem" style="font-size: 18px;">Female:</label>
+                    <input type="radio" id="fem" name="female">
+                    <label for="oth" style="font-size: 18px;">Other:</label>
+                    <input type="radio" id="oth" name="other">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Interests</label>
+                </td>
+                <td>
+                    <label for="dbms" style="font-size: 18px;">Database</label>
+                    <input type="checkbox" name="Database"><br>
+                    <label for="net" style="font-size: 18px;">Computer Network</label>
+                    <input type="checkbox" id="net" name="Computer Network"><br>
+                    <label for="html" style="font-size: 18px;">HTML</label>
+                    <input type="checkbox" id="html" name="HTML">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="statechoice">Choose your state</label>
+                </td>
+                <td>
+                    <select id="statechoice" name="select-choice">
+                    <option value="0" selected disabled >State</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhatisgarh">Chhatisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujatat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jahrkhand">Jharkahnd</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerela">Kerela</option>
+                    <option value="Madhya pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoran">Mizoran</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Tripura</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttrakhand">Uttrakhand</option>
+                    <option value="West Bengal">West Bengal</option>                    
+                    <option></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="city">Choose your city</label>
+                </td>
+                <td>
+                    <select id="city" name="select-choice" >
+                    <option value="0" selected disabled >City</option>
+                    <option value="Ahemdabad">Ahemdabad</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Bangluru">Bangluru</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Gwalior">Gwalior</option>
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label for="photo">Customer Photo</label>
+                </td>
+                <td>
+                    <!-- <label for="photo" style="font-size: 18px;">Upload Image</label> -->
+                    <input type="file" id="photo" name="image" accept="image/*">
+                </td>
+            </tr>
+            <tr id="suggestions">
+                <td colspan="2">
+                    <label for="suggst">Any suggestions</label>
+                    <input type="text" name="suggestions" id="suggst" style="margin-left: 25%; width: 250px; padding: 30px;">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button class="buttn" type="select"
+                    style="margin-left: 9%; margin-top: 12px; ma">Submit</button>
+                    <div id="fl">
+                    <button class="buttn" type="reset" style="margin-left: 35%; margin-bottom: 35px;">Reset</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+      </div>
+    </div>
+</body>
+</html>
